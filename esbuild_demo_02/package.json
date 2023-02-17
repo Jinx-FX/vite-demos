@@ -1,4 +1,9 @@
 {
+  "name": "esbuild_demo_02",
+  "version": "1.0.0",
+  "main": "index.jsx",
+  "license": "MIT",
+  "description": "esbuild : CDN depends on pull plugin",
   "dependencies": {
     "esbuild": "0.14.18"
   }

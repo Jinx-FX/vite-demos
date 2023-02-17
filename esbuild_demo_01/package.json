@@ -1,4 +1,9 @@
 {
+  "name": "esbuild_demo_01",
+  "version": "1.0.0",
+  "main": "index.jsx",
+  "license": "MIT",
+  "description": "esbuild : Code call",
   "dependencies": {
     "esbuild": "0.14.18",
     "react": "^18.2.0",
