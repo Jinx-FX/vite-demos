@@ -1,0 +1,7 @@
+{
+  "name": "esbuild_demo_03",
+  "version": "1.0.0",
+  "main": "index.jsx",
+  "license": "MIT",
+  "description": "esbuild : Implement HTML build plugin"
+}
