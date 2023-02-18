@@ -1,0 +1,10 @@
+{
+  "name": "rollup_demo_01",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "description": "Basic configuration",
+  "scripts": {
+    "build": "rollup -c"
+  }
+}

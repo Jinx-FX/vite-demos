@@ -15,7 +15,8 @@
     "esbuild": "0.14.18",
     "path": "^0.12.7",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "rollup": "^3.17.0"
   },
   "scripts": {
     "build": "./node_modules/.bin/esbuild src/index.jsx --bundle --outfile=dist/out.js"

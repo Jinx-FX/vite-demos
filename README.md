@@ -3,6 +3,8 @@
     - [Esbuild-demo-01: Code Call(source)](#esbuild-demo-01-code-callsource)
     - [Esbuild-demo-02: CDN depends on pull plugin(source)](#esbuild-demo-02-cdn-depends-on-pull-pluginsource)
     - [Esbuild-demo-03: Implement HTML build plugin(source)](#esbuild-demo-03-implement-html-build-pluginsource)
+  - [Rollup](#rollup)
+    - [Rollup-demo-01: Basic configuration(source)](#rollup-demo-01-basic-configurationsource)
 - [Reference](#reference)
 
 # Vite_demo
@@ -232,6 +234,11 @@ serve .
 ```
 
 这样一来，应用的内容就成功显示了，也说明 HTML 插件正常生效了。当然，如果要做一个足够通用的 HTML 插件，还需要考虑诸多的因素，比如自定义 HTML 内容、自定义公共前缀(publicPath)、自定义 script 标签类型以及 多入口打包等等.(扩展: 可参考这个[开源插件](https://github.com/sanyuan0704/ewas/blob/main/packages/esbuild-plugin-html/src/index.ts))
+
+
+## Rollup
+
+### Rollup-demo-01: Basic configuration([source](https://github.com/Jinx-FX/vite-demos/tree/main/rollup_demo_01))
 
 
 # Reference
