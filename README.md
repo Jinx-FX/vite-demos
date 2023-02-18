@@ -240,6 +240,7 @@ serve .
 
 ### Rollup-demo-01: Basic configuration([source](https://github.com/Jinx-FX/vite-demos/tree/main/rollup_demo_01))
 
+![](./assets/rollup.jpg)
 
 # Reference
 
