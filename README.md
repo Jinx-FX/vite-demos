@@ -5,6 +5,8 @@
     - [Esbuild-demo-03: Implement HTML build plugin(source)](#esbuild-demo-03-implement-html-build-pluginsource)
   - [Rollup](#rollup)
     - [Rollup-demo-01: Basic configuration(source)](#rollup-demo-01-basic-configurationsource)
+  - [Vite](#vite)
+    - [Vite plugin development (source)](#vite-plugin-development-source)
 - [Reference](#reference)
 
 # Vite_demo
@@ -241,6 +243,13 @@ serve .
 ### Rollup-demo-01: Basic configuration([source](https://github.com/Jinx-FX/vite-demos/tree/main/rollup_demo_01))
 
 ![](./assets/rollup.jpg)
+
+## Vite
+
+### Vite plugin development ([source](https://github.com/Jinx-FX/vite-demos/tree/main/vite-[plugin-development]))
+
+![](./assets/vite_plugin_hooks_01.jpg)
+![](./assets/vite_plugin_hooks_02.jpg)
 
 # Reference
 
