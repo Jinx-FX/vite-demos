@@ -5,8 +5,10 @@
     - [Esbuild-demo-03: Implement HTML build plugin(source)](#esbuild-demo-03-implement-html-build-pluginsource)
   - [Rollup](#rollup)
     - [Rollup-demo-01: Basic configuration(source)](#rollup-demo-01-basic-configurationsource)
-  - [Vite](#vite)
-    - [Vite plugin development (source)](#vite-plugin-development-source)
+  - [Vite plugin development (source)](#vite-plugin-development-source)
+    - [Test hooks (source)](#test-hooks-source)
+    - [Virtual module loading (source)](#virtual-module-loading-source)
+    - [Svg component form loading (source)](#svg-component-form-loading-source)
 - [Reference](#reference)
 
 # Vite_demo
@@ -244,12 +246,30 @@ serve .
 
 ![](./assets/rollup.jpg)
 
-## Vite
+## Vite plugin development ([source](https://github.com/Jinx-FX/vite-demos/tree/main/vite-[plugin-development]))
 
-### Vite plugin development ([source](https://github.com/Jinx-FX/vite-demos/tree/main/vite-[plugin-development]))
+
+> **调试技巧**
+> 在开发调试插件的过程，推荐在本地装上 `vite-plugin-inspect` 插件，并在 Vite 中使用
+
+### Test hooks ([source](https://github.com/Jinx-FX/vite-demos/tree/main/vite-[plugin-development/plugins/test-hooks.ts]))
 
 ![](./assets/vite_plugin_hooks_01.jpg)
 ![](./assets/vite_plugin_hooks_02.jpg)
+
+### Virtual module loading ([source](https://github.com/Jinx-FX/vite-demos/tree/main/vite-[plugin-development/plugins/virtual-module.ts]))
+
+作为构建工具，一般需要处理两种形式的模块，一种存在于真实的磁盘文件系统中，另一种并不在磁盘而在内存当中，也就是虚拟模块。通过虚拟模块，我们既可以把自己手写的一些代码字符串作为单独的模块内容，又可以将内存中某些经过计算得出的变量作为模块内容进行加载，非常灵活和方便。
+
+### Svg component form loading ([source](https://github.com/Jinx-FX/vite-demos/tree/main/vite-[plugin-development/plugins/svgr.ts]))
+
+主要逻辑在 `transform` 钩子中完成，流程如下:
+
+1. 根据 id 入参过滤出 svg 资源；
+2. 读取 svg 文件内容；
+3. 利用 @svgr/core 将 svg 转换为 React 组件代码;
+4. 处理默认导出为 url 的情况；
+5. 将组件的 jsx 代码转译为浏览器可运行的代码。
 
 # Reference
 
